@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+.navbar{
+	margin-bottom: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+	border: 0;
+	line-height: 2;
+	border-radius: 0;
+}
+.navbar .navbar-brand{
+	color: #fff;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	font-size: 22px;
+	font-family: century;
+}
+.navbar-nav li a{
+	font-weight: bolder;
+	color: #fff !important;
+	text-transform: capitalize;
+	font-size: 14px !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+	color: #034 !important;
+	background: #fff !important;
+	font-weight: bold;
+}
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	color: #fff !important;
+}
+.jumbotron{
+	background: #034;
+	color: #fff;
+	height: 640px;
+	width: 100%;
+}
+.jumbotron h1{
+	text-transform: capitalize;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: absolute;
+	margin-top: 15%;
+	margin-left: 60%;
+	color: #fff;
+}
+.headings{
+	font-family: century;
+	font-size: 3rem;
+	text-align: center;
+	margin: 40px 0px;
+}
+.button{
+	padding: 10px 35px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: capitalize;
+	outline: none;
+	transition: .6s ease;
+	font-weight: bold;
+}
+.button:hover{
+	cursor: pointer;
+	background: #fff;
+	color: #034;
+	box-shadow: 0 0 10px #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+}
+.info{
+	line-height: 15px;
+	margin: 25px 0;
+	flex-direction: column;
+	text-align: justify;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+/* About Me */
+#about{
+	width: 100%;
+	height: 20vh;
+	padding: 30px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+#about h1{
+	text-transform: capitalize;
+	font-weight: bold;
+}
+.col-sm-6 img{
+	max-width: 100%;
+	margin-top: -10px;
+	
+}
+.info h4{
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	color: #999;
+	margin-top: -30px;
+}
+.info p{
+	text-transform: capitalize;
+	font-weight: bold;
+	margin: 3px;
+	margin-top: 3px;
+	padding-left: 7px;
+	color: #000;
+}
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	margin-top: 80vh;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	align-items: center;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+.gallery img{
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+}
+/*Services*/
+#services{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 450px;
+	border: 1px solid #000;
+	margin: 3px;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(to top, rgb(255, 45, 45) 50%, #fff 50%);
+	background-size: 100% 200%;
+	transition: all .8s;
+}
+.box:hover{
+	background-position:left bottom ;
+	color: #fff;
+	box-shadow: 0 0 20px #000;
+	border: none;
+}
+.box-2:hover{
+	color: #999;
+	font-weight: bold;
+}
+.box-2{
+	padding: 40px;
+	text-transform: capitalize;
+}
+.box-2 p{
+	margin: 10px;
+}
+/*foot*/
+#foot{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.9);
+	padding-bottom: 3px;
+}
+h3{
+	text-transform: capitalize;
+	color: #fff;
+	margin-left: 0px;
+	padding-top: 30px;
+	font-family: century;
+}
+.foot-col-1, .foot-col-2, .foot-col-3{
+	min-width: 400px;
+	margin-bottom: 20px;
+}
+.foot-col-1{
+	flex-basis: 20%;
+}
+.foot-col-1 img{
+	padding-top: 10px;
+	display: inline-block;
+	padding-left: 20px;
+	margin: 1px;
+}
+.foot-col-2{
+	flex: 1;
+	text-align: center;
+	color: #fff;
+}
+.foot-col-2 h5{
+	color: #fff;
+	font-size: 1.1rem;
+}
+.foot-col-3{
+flex-basis: 12%;
+text-align: center;
+color: #fff;
+}
+.foot-col-3 a{
+	color: #fff;
+}
+.last{
+	padding: 20px;
+	color: #fff;
+}
+@media (max-width: 600px){
+	#home .main{
+		margin-top: 60%;
+		margin-left: 40%;
+	}
+}
+@media (max-width: 850px){
+	#home .main{
+		margin-top: 30%;
+		margin-left: 40%;
+	}
+}
